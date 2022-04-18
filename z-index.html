@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+            color: #ffffff;
+
+
+            height: 100vh;
+        }
+
+        header::before {
+            background: url(img/grzegorz-walczak-yoIIPcrWhjI-unsplash.jpg);
+            background-position: center ;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .navigation {
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px;
+        }
+
+        section {
+            height: 444px;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            font-family: 'Pacifico', cursive;
+        }
+
+        /* section::before{
+            content: "this is a content";
+        } */
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Dark world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus obcaecati, sunt fuga quam hic
+            consequatur. Ad sit, exercitationem sequi soluta tempora repellendus, qui quo repellat hic, laborum
+            rerum non quis id error blanditiis laudantium!</p>
+    </section>
+
+</body>
+
+</html>
